@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <style>
+        .container-navbar ul {
+            text-align: center;
+            list-style: none;
+        }
+
+        .Option {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .Option .nav:first-child {
+            color: #fcfcfc;
+            text-decoration: none;
+        }
+
+        .Option .active {
+            background-color: blue;
+            padding: 10px 20px;
+        }
+
+        .title {
+            text-align: center;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div class="container-navbar">
+            <ul>
+                <li>
+                    <h1>WELCOME TO KATIK</h1>
+                    <h4>hai sobat selamat datang di katik sebuah web apps sederhana untuk menghitung luas rumus</h4>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="Option">
+            <a href="./index.html" class="nav active"> Luas Segitiga </a>
+            <a href="./index1.html" class="nav"> Keliling Segitiga </a>    
+        </div>
+        <!-- NAVBAR END -->
+
+        <section class="title">
+            <h1>LUAS SEGITGA</h1>
+            <!-- Input buat alas -->
+            <label for="alas">Alas:</label>
+            <input type="text" id="alas" />
+            <!-- Input buat alas -->
+            <br />
+            <label for="tinggi">Tinggi:</label>
+            <input type="text" id="tinggi" />
+            <br />
+            <button onclick="hitungLuas()">Hitung Luas</button>
+            <p id="hasilLuas"></p>
+
+            <script src="index.js"></script>
+        </section>
+</body>
+
+</html>

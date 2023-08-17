@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <style>
+        .container-navbar ul {
+            text-align: center;
+            list-style: none;
+        }
+
+        .Option {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .Option .nav:last-child {
+            color: #fcfcfc;
+            text-decoration: none;
+        }
+
+        .Option .active {
+            background-color: blue;
+            padding: 10px 20px;
+        }
+
+        .title {
+            text-align: center;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div class="container-navbar">
+            <ul>
+                <li>
+                    <h1>WELCOME TO KATIK</h1>
+                    <h4>hai sobat selamat datang di katik sebuah web apps sederhana untuk menghitung luas rumus</h4>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="Option">
+            <a href="./index.html" class="nav"> Luas Segitiga </a>
+            <a href="./index1.html" class="nav active"> Keliling Segitiga </a>
+        </div>
+        <!-- NAVBAR END -->
+
+        <section class="title">
+            <h1>KELILING SEGITIGA</h1>
+            <div class="container">
+                <h1 class="text-center">Hitung Keliling Segitiga</h1>
+          
+                <!-- Input buat sisiSatu -->
+                <div class="mb-3">
+                  <label for="sisiSatu" class="form-label">Sisi Satu :</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="sisiSatu"
+                    placeholder="Masukan Angka Sisi 1" />
+                </div>
+                <!-- Input buat sisiSatu -->
+          
+                <!-- Input buat sisiDua -->
+                <div class="mb-3">
+                  <label for="sisiDua" class="form-label">Sisi Dua :</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="sisiDua"
+                    placeholder="Masukan Angka Sisi 2" />
+                </div>
+                <!-- Input buat sisiDua -->
+          
+                <!-- Input buat sisiTiga -->
+                <div class="mb-3">
+                  <label for="sisiTiga" class="form-label">Sisi Tiga :</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="sisiTiga"
+                    placeholder="Masukan Angka Sisi 3" />
+                </div>
+                <!-- Input buat sisiTiga -->
+          
+                <button onclick="hitungKeliling()" class="btn btn-primary w-100">
+                  Hitung Keliling
+                </button>
+          
+                <br />
+                <br />
+          
+                <p id="hasilKeliling"></p>
+              </div>
+              
+        </section>
+
+        <script src="./index.js">
+
+        </script>
+
+</body>
+
+</html>
